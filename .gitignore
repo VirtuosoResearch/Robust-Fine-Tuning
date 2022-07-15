@@ -101,7 +101,8 @@ ENV/
 .mypy_cache/
 
 # input data, saved log, checkpoints
-data/
+# data/
+!data/domain_net
 input/
 saved/
 saved_label_noise/
