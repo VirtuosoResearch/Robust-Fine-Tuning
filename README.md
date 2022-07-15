@@ -9,7 +9,7 @@ In this work, we develop Hessian-based generalization bounds for fine-tuned mode
 
 Besides the implementation of our algorithm, we also provide the implementation to evaluate Hessian-based quantities (e.g., traces and Hessian vector product) of fine-tuned models. Our observation is that by incorporating Hessians with distance from initialization, the Hessian distance measure better correlates with the generalization error of fine-tuning. 
 
-<div align=center><img src='./figures/hessian_measure.pdf' width="500"></div>
+<div align=center><img src='./figures/hessian_measure.png' width="500"></div>
 
 ### Requirements
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ### Data Preparation
 
-We use six domains of object classification tasks from the DomainNet (Peng et al., 2019) dataset and create labels using weak supervision approaches following the work of Mazzetto et al. (2021). For completeness, we provide a copy of the DomainNet dataset under the directory `./exps_on_image_datasets/data/`. We refer the reader to the [implementation](https://github.com/BatsResearch/amcl) of Mazzetto et al. (2021) for generating the labels. 
+We use six domains of object classification tasks from the DomainNet (Peng et al., 2019) dataset and create labels using weak supervision approaches following the work of Mazzetto et al. (2021). For completeness, we provide a copy of the DomainNet dataset under the directory `./exps_on_image_datasets/data/`. We refer the reader to the [implementation](https://github.com/BatsResearch/amcl) of Mazzetto et al. (2021) for the process of generating the labels. 
 
 Besides the DomainNet dataset, we also use several other datasets in our experiments. We list the link for downloading the datasets below:
 
@@ -36,7 +36,7 @@ Our code automatically handles the processing of the datasets.
 
 We provide the implementations of fine-tuning on both image and text classification tasks. Run the corresponding experiments under the directory of `./exps_on_image_datasets/` and `./exps_on_text_datasets/`. 
 
-#### **Fine-tuning on the image classification tasks**
+#### **Fine-tuning on Image Classification Tasks**
 
 **Fine-tuning ResNet models under label noise.**
 
@@ -101,7 +101,7 @@ python compute_hessian_measures.py --config $config_file_name \
     --save_name $name_for_saved_file --sample_size $sample_size --num_layers $number_of_layers_in_model --device 0
 ```
 
-#### **Fine-tuning on the text classification tasks**
+#### **Fine-tuning on Text Classification Tasks**
 
 **Fine-tuning RoBERTa/BERT model on noisy labels**
 
