@@ -1,6 +1,6 @@
 ### Overview
 
-In this repository, we provide the implementation to evaluate Hessian-based quantities (e.g., traces and Hessian vector product) of fine-tuned models. Our observation is that by incorporating Hessians with distance from initialization, the Hessian distance measure better correlates with the generalization error of fine-tuning.
+In this repository, we provide the implementation to evaluate Hessian-based quantities (e.g., traces and Hessian vector product) of fine-tuned models. Our observation is that by incorporating Hessians with distance from initialization, the Hessian distance measure provides a nonvacuous measure of the generalization gaps of fine-tuned models. Non-vacuous in the sense that the measures have the same scale as the empirically-observed generalization gaps.
 
 ### Requirements
 
