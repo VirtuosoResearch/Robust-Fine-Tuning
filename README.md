@@ -1,15 +1,6 @@
 ### Overview
 
-This repository provides the implementation for the paper "Robust Fine-Tuning of Deep Neural Networks with Hessian-based Generalization Guarantees", which will be presented as a spotlight paper in ICML'22.
-
-In this work, we develop Hessian-based generalization bounds for fine-tuned models. Our analysis leads to an algorithm for fine-tuning with noisy labels. Our algorithm incorporates two components:
-
-- **Distance-based regularization**: Constrain the distance of model weights from initialization at different layers of the neural network. 
-- **Consistent loss reweighting**: Reweight the loss with the inverse of label confusion matrix, which is parameterized by a single noise rate or estimated from model predictions. 
-
-Besides the implementation of our algorithm, we also provide the implementation to evaluate Hessian-based quantities (e.g., traces and Hessian vector product) of fine-tuned models. Our observation is that by incorporating Hessians with distance from initialization, the Hessian distance measure better correlates with the generalization error of fine-tuning. 
-
-<div align=center><img src='./figures/hessian_measure.png' width="500"></div>
+In this repository, we provide the implementation to evaluate Hessian-based quantities (e.g., traces and Hessian vector product) of fine-tuned models. Our observation is that by incorporating Hessians with distance from initialization, the Hessian distance measure better correlates with the generalization error of fine-tuning.
 
 ### Requirements
 
